@@ -1,8 +1,5 @@
-
 #include <iostream>
-
 using namespace std;
-
 int main()
 {
     int i,j,sp=40,n;
@@ -19,6 +16,5 @@ int main()
             cout<<endl;
             sp=sp-2;
         }
-
     return 0;
 }
