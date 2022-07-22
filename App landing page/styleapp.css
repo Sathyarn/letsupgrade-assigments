@@ -17,11 +17,21 @@
 .container-fluid {
     background: rgba(0,0,0,0.1) !important;
 }
+@media (max-width:767px){
 #navbarCollapse{
-    background: rgba(0,0,0,0.2) !important;
+    background: rgba(0,0,0,0.9) !important;
     margin-top: 30px;
-    left: -80%;
-    display: none;
+    transform: translateX(-100%);
+    display: block;
+}
+.collapse {
+    display: block;
+}
+}
+@media (min-width:768px){
+    #navbarCollapse{
+        transform: translateX(0px) !important;
+    }
 }
 .navbar-inverse{
     background: rgba(0,0,0,0.5) !important;
@@ -33,10 +43,32 @@
     margin-right: 35px;
     padding: 10px 0px;
     display: inline-block;
+    position: relative;
+    top: 20px;
 }
 .nav li:hover{
     border-bottom: 1px solid #00ffbb;
     cursor: pointer;
+}
+@media (max-width:767px){
+.close1-bar,.close2-bar {
+    background-color: #fff;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    float: right;
+    position: absolute;
+    right: 4%;
+    top: 7%;
+    cursor: pointer;
+}
+.close1-bar{
+    transform: rotate(45deg);
+}
+.close2-bar{
+    transform: rotate(136deg);
+}
 }
 .seemorebtn{
     background-color: #832727;
