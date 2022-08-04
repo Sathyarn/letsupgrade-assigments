@@ -5,6 +5,9 @@
     margin-bottom: 0px !important;
     padding-top: 0px !important;
 }
+.row {
+    border:0px;margin-right:0;margin-left:0;max-width:100%;
+}
 .logo2{
     height: 80px;
 }
