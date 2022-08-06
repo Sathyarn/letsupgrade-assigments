@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #eaeaea;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.wapp .search {
+    text-align: center;
+    padding: 1rem;
+}
+.wheader{
+    color: #ebff7d;
+    text-align: center;
+    margin: 0px auto;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+.wapp::before {
+    content: '';
+    background: url('./sunset1.png') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#time{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: rgb(255, 241, 38);
+}
+.wapp input {
+    width: 300px;
+    font-size: 18px;
+    padding: 1rem 1.5rem;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::placeholder {
+    color: #f8f8f8;
+}
+
+.wapp {
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+    background: url('./sunset1.png') no-repeat center bottom/cover;
+}
+
+.wcontainer {
+    max-width: 700px;
+    height: 700px;
+    margin: auto;
+    padding: 0 1rem;
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wapp .top {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.wapp .description {
+    position: relative;
+}
+
+.wapp .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(18, 27, 37);
+}
+
+.bold {
+    font-weight: 700;
+    font-size: 18px;
+}
+.feels,.humidity,.wind {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 60px;
+    border-radius: 5px;
+    color: burlywood;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+    .feels,.humidity,.wind {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px px 5px;
+        border-radius: 5px;
+        color: burlywood;
+        margin-bottom: 5px;
+    }
+    .wapp .bottom {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 1rem auto;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgb(18, 27, 37);
+    }
+}
